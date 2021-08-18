@@ -1,0 +1,18 @@
+{
+  "resources": [
+    {
+      "title": "Axi Draw",
+      "description": "The AxiDraw is a simple, modern, precise, and versatile pen plotter, capable of writing or drawing on almost any flat surface. It can write with your favorite fountain pens, permanent markers, and other writing implements to handle an endless variety of applications. ",
+      "image": "img/axidraw.jpg"
+    },
+    {"title": "Vinyl Cutter Printer",
+      "description": "The Vinyl cutter is the best machine to use if you want to create a particular symbol or shape which you can paste anywhere you want. You can design the shape, letters or symbols you want to cut on a software program like Adobe photo shop or Corel draw and direct it with a computer command to the cutter.",
+      "image": "img/vinylcutter.jpg"
+    },
+    {
+    "title": "3D Printer Flashforge",
+    "description": "The FlashForge Creator 3 3D Printer delivers industrial level 3D printing in a compact form factor. It uses independent extruders to allow for the printing of incredibly complicated shapes and parts with ease, using soluble supports.",
+    "image": "img/axidraw.jpg"
+    }
+  ]
+}

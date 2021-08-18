@@ -1,0 +1,516 @@
+body {
+    font-family: Open Sans, Helvetica, sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    background-color: white;
+}
+
+h1 {
+    text-align: center;
+    font-weight: normal;
+    font-size: 48px;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    overflow: hidden;
+    text-align: center;
+}
+
+.nav-menu {
+    display: inline-block;
+}
+
+/* Style the links inside the navigation bar */
+.nav-menu a {
+    color: black;
+    padding: 1em 2.5em;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    color: black;
+}
+
+nav {
+    padding-bottom: 40px;
+}
+
+main {
+    width: 73vw;
+    margin: 0 auto;
+}
+
+section {
+    padding-bottom: 40px;
+}
+
+.container {
+    display: flex;
+}
+
+.purpose-right {
+    flex-shrink: 1.4;
+}
+
+.purpose-right-text {
+    width: 60%;
+    line-height: 32px
+    color: #999999;
+    font-family: arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 1px;
+
+}
+
+.purpose-image-wrapper {
+    text-align: center;
+}
+
+
+div {
+}
+
+.contact-image-wrapper {
+    text-align: right;
+}
+
+.purpose-image-wrapper img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.contact-image-wrapper img {
+    max-width: 80%;
+    max-height: 80%;
+    margin-right: 0;
+}
+p{
+    color: black;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+
+table {
+    margin-right: 0;
+    margin-left: auto;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+td {
+    height: 20px;
+}
+
+input, textarea {
+    padding: 12px 20px;
+    margin: 8px 0;
+}
+
+input[type="text"] {
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 0 0;
+    width: 37%;
+}
+
+input[type="email"] {
+    display: inline-block;
+    width: 88%;
+}
+
+input[type="text"]:last-child {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+button {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#footer {
+    height: 200px;
+    width: 100vw;
+    background: black;
+}
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+    width: 2000px;
+    position: relative;
+    margin: auto;
+}
+
+
+/* Hide the images by default */
+.mySlides {
+    width: 100%;
+    display: none;
+}
+
+.mySlides img{
+    width: inherit;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 40%;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+img.resize {
+    width:200px;
+    height:40px;
+
+}
+
+.welcome-left {
+    flex-basis: auto;
+}
+
+.welcome-left-text {
+    width: 80%;
+    line-height: 36px;
+    font-size: 1.7em;
+    margin: 0 auto;
+}
+
+.welcome-image-wrapper {
+    text-align: right;
+    width: 600px;
+    resize: both;
+}
+
+.welcome-image-wrapper img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.read-more-btn {
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.read-more-btn:hover {
+    cursor: pointer;
+    background: black;
+    color: white;
+}
+
+.flex-footer {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    color: white;
+}
+
+.flex-footer div {
+    padding-top: 20px;
+    padding-left: 200px;
+    padding-right: 100px;
+}
+
+#flex-footer-el-1 {
+
+}
+
+#flex-footer-el-1 div {
+    padding: 10px;
+}
+
+#flex-footer-el-2 {
+    /*padding-left: 50px;
+    padding-top: 10px;*/
+    float:right;
+    text-align: right;
+}
+
+#flex-footer-el-3 {
+    padding-top: 10px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#flex-footer-el-3 div {
+    padding-left: 0;
+    padding-bottom: 0;
+}
+
+.college-name {
+    color: white;
+}
+
+.address-line {
+    color: gray;
+}
+
+.phone {
+    color: gray;
+}
+
+.circle {
+    height: 50px;
+    width: 50px;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.donate-btn {
+    background-color: gray;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 0;
+    display: inline-block;
+    font-size: 16px;
+}
+
+div {
+    border-color: coral;
+}
+
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*html, body {
+    background: white;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.slider {
+    margin: 0 auto;
+    max-width: 940px;
+}
+
+.slide_viewer {
+    height: 340px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide_group {
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+.slide {
+    display: none;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.slide:first-child {
+    display: block;
+}
+
+.slide:nth-of-type(1) {
+    background: #D7A151;
+}
+
+.slide:nth-of-type(2) {
+    background: #F4E4CD;
+}
+
+.slide:nth-of-type(3) {
+    background: #C75534;
+}
+
+.slide:nth-of-type(4) {
+    background: #D1D1D4;
+}
+
+.slide_buttons {
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+}
+
+a.slide_btn {
+    color: #474544;
+    font-size: 42px;
+    margin: 0 0.175em;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.slide_btn.active, .slide_btn:hover {
+    color: #428CC6;
+    cursor: pointer;
+}
+
+.directional_nav {
+    height: 340px;
+    margin: 0 auto;
+    max-width: 940px;
+    position: relative;
+    top: -340px;
+}
+
+.previous_btn {
+    bottom: 0;
+    left: 100px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+}
+
+.next_btn {
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    right: 100px;
+    top: 0;
+}
+
+.previous_btn, .next_btn {
+    cursor: pointer;
+    height: 65px;
+    opacity: 0.5;
+    -webkit-transition: opacity 0.4s ease-in-out;
+    -moz-transition: opacity 0.4s ease-in-out;
+    -ms-transition: opacity 0.4s ease-in-out;
+    -o-transition: opacity 0.4s ease-in-out;
+    transition: opacity 0.4s ease-in-out;
+    width: 65px;
+}
+
+.previous_btn:hover, .next_btn:hover {
+    opacity: 1;
+}
+
+@media only screen and (max-width: 767px) {
+    .previous_btn {
+        left: 50px;
+    }
+    .next_btn {
+        right: 50px;
+    }
+}*/
+
