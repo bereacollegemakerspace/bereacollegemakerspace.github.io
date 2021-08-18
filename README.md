@@ -1,2 +1,2 @@
-# bereacollegemakerspace.github.oi
+# Berea College Makerspace Homepage
 Website for Berea College Makerspace
