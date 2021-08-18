@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="resources.css">
+</head>
+<body onload="renderResources()">
+    <header>
+        <nav>
+            <h1>MAKERSPACE LAB</h1>
+            <div class="topnav">
+                <div class="nav-menu">
+                    <a href="index.html">HOME</a>
+                    <a href="news_and_events.html">NEWS&EVENTS</a>
+                    <a href="#">RESOURCES</a>
+                    <a href="#">DONATE</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="resources_section">
+            <div id="resourceContainer">
+
+            </div>
+        </section>
+    </main>
+<script>
+    function renderResources() {
+        fetch("./db/resources.json")
+            .then(response => {
+                return response.json();
+            })
+            .then(data => {
+                let resources = data.resources;
+                let resourceContainer = document.getElementById("resourceContainer");
+                for(let i = 0; i < resources.length; i++) {
+                    resourceContainer.innerHTML += `
+                <div class="container">
+                    <div class="flex-left">
+                        <h3>` + resources[i].title + `</h3>
+                        <img src="`+ resources[i].image +`" alt="picture">
+                    </div>
+                    <div class="flex-right">
+                        <p class="right-desc">`+ resources[i].description +`</p>
+                        <form action="https://forms.gle/YAFNM6VkJ1RztLpE6">
+                            <button class="resource-signup-btn">Sign up</button>
+                        </form>
+                        <form action="https://drive.google.com/file/d/1FRGu3IZK1Vzd5dPeTjfgYOC0jcVOMaGq/view?usp=sharing">
+                            <button class="resource-tutorial-btn"> Watch Tutorial</button>
+                        </form>
+                </div>`
+
+                }
+            });
+    }
+</script>
+    <div id="footer">
+        <div class="flex-footer">
+            <div id="flex-footer-el-1">
+                <div class="college-name">BEREA COLLEGE</div>
+                <div class="address-line">101 CHESTNUT STREET</div>
+                <div class="address-line">BEREA, KENTUCKY 40403</div>
+                <div class="phone">+1 859-985-3000</div>
+            </div>
+            <div id="flex-footer-el-2">
+                <div>FOLLOW US</div>
+                <div>
+                    <span class="circle"></span>
+                    <span class="circle"></span>
+                    <span class="circle"></span>
+                </div>
+            </div>
+            <div id="flex-footer-el-3">
+                <div>SUPPORT US</div>
+                <div class="donate-btn-wrapper">
+                    <button class="donate-btn">DONATE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

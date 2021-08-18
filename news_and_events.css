@@ -1,0 +1,402 @@
+body {
+    font-family: Open Sans, Helvetica, sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    font-weight: normal;
+    font-size: 48px;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    overflow: hidden;
+    text-align: center;
+}
+
+.nav-menu {
+    display: inline-block;
+}
+
+/* Style the links inside the navigation bar */
+.nav-menu a {
+    color: black;
+    padding: 1em 2.5em;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    color: black;
+}
+
+nav {
+    padding-bottom: 40px;
+}
+
+main {
+    width: 73vw;
+    margin: 0 auto;
+}
+
+section {
+    padding-bottom: 40px;
+}
+
+.container {
+    display: flex;
+}
+
+.welcome-left {
+    flex-basis: auto;
+}
+
+.welcome-left-text {
+    width: 80%;
+    line-height: 36px;
+    font-size: 1.7em;
+    margin: 0 auto;
+}
+
+.welcome-image-wrapper {
+    text-align: right;
+    width: 600px;
+    resize: both;
+}
+
+.welcome-image-wrapper img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.read-more-btn {
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.read-more-btn:hover {
+    cursor: pointer;
+    background: black;
+    color: white;
+}
+
+h3 {
+   text-align: center;
+   font-size: 28px;
+}
+
+.event-block {
+    border: 2px solid black;
+    padding-left: 10px;
+    margin: 0 auto;
+    width: 60%;
+}
+
+.event-title {
+    color: #3498DB;
+    font-size: 20px
+}
+
+.event-time {
+    font-size: 12px;
+    color: gray;
+}
+
+.event-desc {
+    width: 80%;
+}
+
+.event-register-btn {
+    background-color: #3498DB;
+    border: 2px solid black;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: -2px;
+    margin-bottom: -2px;
+    border-collapse: collapse;
+}
+
+.event-register-btn:hover {
+    color: #3498DB;
+    background-color: white;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+    width: 1000px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.prev {
+    left: 50%;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.slideshow-element {
+    flex: 1;
+}
+
+.slideshow-text {
+    position: relative;
+}
+
+.slideshow-text-inner {
+    position: absolute;
+    width: 400px;
+    top: 50%;
+    left: 60%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 1.5em;
+}
+
+.slideshow-img-wrapper {
+    height: 400px;
+}
+
+.slideshow-img-wrapper img {
+    height: 100%;
+    width: 100%;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.flex-left img {
+    object-fit: cover;
+    width: 100%;
+}
+
+#footer {
+    height: 200px;
+    width: 100vw;
+    background: black;
+}
+
+.flex-footer {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    color: white;
+}
+
+.flex-footer div {
+    padding-top: 20px;
+    padding-left: 200px;
+    padding-right: 100px;
+}
+
+#flex-footer-el-1 {
+
+}
+
+#flex-footer-el-1 div {
+    padding: 10px;
+}
+
+#flex-footer-el-2 {
+    padding-left: 50px;
+    padding-top: 10px;
+}
+
+#flex-footer-el-3 {
+    padding-top: 10px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#flex-footer-el-3 div {
+    padding-left: 0;
+    padding-bottom: 0;
+}
+
+.college-name {
+    color: white;
+}
+
+.address-line {
+    color: gray;
+}
+
+.phone {
+    color: gray;
+}
+
+/*.circle {*/
+/*    height: 50px;*/
+/*    width: 50px;*/
+/*    background-color: #bbb;*/
+/*    border-radius: 50%;*/
+/*    margin-right: 10px;*/
+/*    display: inline-block;*/
+/*}*/
+
+.circle {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.circle:hover {
+    opacity: 0.7;
+}
+
+.circle {
+    background: #3B5998;
+    color: white;
+}
+
+
+.donate-btn {
+    background-color: gray;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 0;
+    display: inline-block;
+    font-size: 16px;
+}
+
+/* The Modal (background) */
+.news-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.news-modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+

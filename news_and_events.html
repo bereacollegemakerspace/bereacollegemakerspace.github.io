@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>News & Events</title>
+    <link rel="stylesheet" href="news_and_events.css">
+    <script src="makerspace.js"> </script>
+</head>
+<body onload="renderNews();currentSlide(1)">
+  <header>
+    <nav>
+      <h1>MAKERSPACE LAB</h1>
+      <div class="topnav">
+        <div class="nav-menu">
+          <a href="index.html">HOME</a>
+          <a href="news_and_events.html">NEWS&EVENTS</a>
+          <a href="resources.html">RESOURCES</a>
+          <a href="#">DONATE</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="welcome_section">
+          <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="slideshow-element slideshow-text">
+                <div class="slideshow-text-inner">
+                  <p>The Makerspace Lab Welcomes Faculty and Staff 1</p>
+                  <button id="newsBtn1" class="read-more-btn">Read more</button>
+                </div>
+              </div>
+              <div class="slideshow-element slideshow-img-wrapper">
+                <img src="https://lh3.googleusercontent.com/WwCHH7HNU4GQF3P45M-sZBPM_v60vr3iGybMiQa0g05VM2R1abdY7-KSM0LTlfnxwVe8X7ou6j8AdCNGv9_fBDe_qXcJwHgmPhZprsSBchzb1KeLtscgeR-Kin6eiC-EWwNuRm8Kfg=w2400">
+              </div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="slideshow-element slideshow-text">
+                <div class="slideshow-text-inner">
+                  <p>The Makerspace Lab Welcomes Faculty and Staff 2</p>
+                  <button id="newsBtn2" class="read-more-btn">Read more</button>
+                </div>
+              </div>
+              <div class="slideshow-element slideshow-img-wrapper">
+                <img src="https://lh3.googleusercontent.com/yUdnEAbOBzLVKWsG7S0yDwqeaxFuj24xK8f74AA5pi2o2JXdnlmD_AhevHUQ-Q7c-VGIzXDZ_R3LgCgCozaBqqpxuDEw0s9jj7SnkM9eIlIFLqAjxTXIil9t6ekSBE1c4VehxWn-rg=w2400">
+              </div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="slideshow-element slideshow-text">
+                <div class="slideshow-text-inner">
+                  <p>The Makerspace Lab Welcomes Faculty and Staff 3</p>
+                  <button id="newsBtn3" class="read-more-btn">Read more</button>
+                </div>
+              </div>
+              <div class="slideshow-element slideshow-img-wrapper">
+                <img src="https://lh3.googleusercontent.com/zXWqpSfoRRQ9VYKRSG_GWftDsK74pn39VrizdeyOq6KBvmDTV0KQT7-uXwojAyMIooL8T04zmNoyAVqOQ2HgV7aFy9pV-ZxpXh49itkY9RyPfb2ynnCmSffv672u6oB_nFZcFDxxKQ=w2400">
+              </div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <br>
+
+<!--            &lt;!&ndash; The dots/circles &ndash;&gt;-->
+<!--            <div style="text-align:center">-->
+<!--              <span class="dot" onclick="currentSlide(1)"></span>-->
+<!--              <span class="dot" onclick="currentSlide(2)"></span>-->
+<!--              <span class="dot" onclick="currentSlide(3)"></span>-->
+<!--            </div>-->
+          </div>
+    </section>
+    <section class="news_section">
+      <h3>Join our events!</h3>
+      <div id="eventContainer" class="event-container">
+      </div>
+    </section>
+    <!-- The Modal -->
+    <div id="newsModal" class="news-modal">
+
+      <!-- Modal content -->
+      <div class="news-modal-content">
+        <span class="close">&times;</span>
+        <p>Welcome to Makerspace! </p>
+      </div>
+
+    </div>
+  </main>
+  <footer>
+    <div id="footer">
+      <div class="flex-footer">
+        <div id="flex-footer-el-1">
+          <div class="college-name">BEREA COLLEGE</div>
+          <div class="address-line">126 N Main St, Danforth Technology Builidng</div>
+          <div class="address-line">BEREA, KENTUCKY 40403</div>
+          <div class="phone">+1 859-985-3000</div>
+        </div>
+        <div id="flex-footer-el-2">
+          <div>FOLLOW US</div>
+          <div>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+          </div>
+        </div>
+        <div id="flex-footer-el-3">
+          <div>SUPPORT US</div>
+          <div class="donate-btn-wrapper">
+            <button class="donate-btn">DONATE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    function renderNews() {
+      fetch("./db/news.json")
+              .then(response => {
+                return response.json();
+              })
+              .then(data => {
+                let news = data.news;
+                let eventContainer = document.getElementById("eventContainer");
+                for(let i = 0; i < news.length; i++) {
+                  eventContainer.innerHTML += `<div class="event-block">
+                    <h4 class="event-title">` + news[i].title + `</h4>
+
+                    <span class="event-time">`+ news[i].date_created + `</span>
+                    <p class="event-desc">` + news[i].description + `<a href="#">Read more</a></p>
+
+                     <form action="https://forms.gle/MGCJ1UCzmtWxWUpy8">
+                           <button class="event-register-btn">Register now</button>
+                     </form>
+                  </div>`
+                }
+              });
+    }
+
+  </script>
+</body>
+</html>
