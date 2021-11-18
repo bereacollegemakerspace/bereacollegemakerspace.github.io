@@ -10,6 +10,7 @@ h1 {
     font-size: 48px;
 }
 
+
 /* Add a black background color to the top navigation */
 .topnav {
     overflow: hidden;
@@ -237,7 +238,7 @@ h3 {
 }
 
 .slideshow-img-wrapper {
-    height: 400px;
+    height: 500px;
 }
 
 .slideshow-img-wrapper img {
@@ -296,8 +297,8 @@ h3 {
 }
 
 #flex-footer-el-2 {
-    padding-left: 50px;
-    padding-top: 10px;
+    float:right;
+    text-align: right;
 }
 
 #flex-footer-el-3 {
