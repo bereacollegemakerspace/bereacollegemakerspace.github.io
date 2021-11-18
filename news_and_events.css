@@ -64,10 +64,9 @@ section {
 
 .welcome-image-wrapper {
     text-align: right;
-    width: 600px;
+    width: 400px;
     resize: both;
 }
-
 .welcome-image-wrapper img {
     object-fit: cover;
     width: 100%;
@@ -238,7 +237,7 @@ h3 {
 }
 
 .slideshow-img-wrapper {
-    height: 200px;
+    height: 450px;
 }
 
 .slideshow-img-wrapper img {
