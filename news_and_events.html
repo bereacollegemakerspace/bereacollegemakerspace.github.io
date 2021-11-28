@@ -5,6 +5,7 @@
     <title>News & Events</title>
     <link rel="stylesheet" href="news_and_events.css">
     <script src="makerspace.js"> </script>
+
 </head>
 <body onload="renderNews();currentSlide(1)">
   <header>
@@ -15,7 +16,7 @@
           <a href="index.html">HOME</a>
           <a href="news_and_events.html">NEWS&EVENTS</a>
           <a href="resources.html">RESOURCES</a>
-          <a href="#">DONATE</a>
+<!--          <a href="#">DONATE</a>-->
         </div>
       </div>
     </nav>
@@ -133,12 +134,14 @@
                   eventContainer.innerHTML += `<div class="event-block">
                     <h4 class="event-title">` + news[i].title + `</h4>
 
+
                     <span class="event-time">`+ news[i].date_created + `</span>
                     <p class="event-desc">` + news[i].description + `<a href="#">Read more</a></p>
 
                      <form action="https://forms.gle/MGCJ1UCzmtWxWUpy8">
                            <button class="event-register-btn">Register now</button>
                      </form>
+
                   </div>`
                 }
               });

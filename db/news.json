@@ -1,16 +1,16 @@
 {
   "news": [
     {
-      "title": "How to use Flashforge 3D Printer?",
-      "description": "Axi Draw in-person workshop is happening at Danforth Technology Building. You will learn how to create drawings with Axi Draw machine. Build your own card for a friend for free!",
+      "title": "Intro to 3D Printing: build your own 3D object",
+      "description": "This workshop is to give an introduction on how to use 3D printer Flashforge. You will also be able to create your own 3D project. Snacks are available!",
       "creator": "Sabira Duishebaeva",
       "date_created": "2021-06-25",
-      "picture": "/img/purpose_img.jpg",
-      "image": "img/axidraw.jpg"
+      "picture": "/img/flashforge.png",
+      "image": "img/flashforge.png"
     },
     {
-      "title": "Get comfortable with Axi Draw",
-      "description": "Learn how to use 3d Dreamforge printers in 2 days! You will be able to create your own 3D figures from the scratch!",
+      "title": "Get comfortable with Vinyl Cutter and make your own vinyl stickers",
+      "description": "This workshop is dedicated to give students the chance to learn how to use vinyl cutter and build their own designs for stickers",
       "creator": "Sabira Duishebaeva",
       "date_created": "2021-06-25",
       "picture": "/img/vinylcutter.jpg"
