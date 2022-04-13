@@ -137,6 +137,7 @@
 
                     <span class="event-time">`+ news[i].date_created + `</span>
                     <p class="event-desc">` + news[i].description + `<a href="#">Read more</a></p>
+                    <img src="` + news[i].picture + `" width="50" height="50"> 
 
                      <form action="https://forms.gle/MGCJ1UCzmtWxWUpy8">
                            <button class="event-register-btn">Register now</button>
@@ -144,6 +145,9 @@
 
                   </div>`
                 }
+              })
+              .catch((error) => {
+                console.log(error);
               });
     }
 
