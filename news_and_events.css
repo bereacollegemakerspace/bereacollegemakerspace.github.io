@@ -169,12 +169,12 @@ h3 {
 }
 
 .prev {
-    left: 50%;
+    left: 53.5%;
 }
 
 /* Position the "next button" to the right */
 .next {
-    right: 0;
+    right: -7%;
     border-radius: 3px 0 0 3px;
 }
 
@@ -243,6 +243,7 @@ h3 {
 .slideshow-img-wrapper img {
     height: 100%;
     width: 100%;
+    object-fit: cover;
 }
 
 /* Fading animation */
