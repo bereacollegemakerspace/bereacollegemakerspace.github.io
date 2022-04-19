@@ -1,24 +1,24 @@
 {
   "news": [
     {
-      "title": "3D Printer Workshop",
-      "description": "Axi Draw in-person workshop is happening at Danforth Technology Building. You will learn how to create drawings with Axi Draw machine. Build your own card for a friend for free!",
+      "title": "Indigo Dyeing Workshop",
+      "description": "Join us for an indigo dying workshop with our very own dye artist Sarah Broomfield. The activities of the workshop include learning about different cultures' indigo dying practices, creating various patterns in your fabric, how to prepare a natural indigo dye vat, and "dipping" your fabrics to get brilliantly varied shades of blue!",
       "creator": "Sabira Duishebaeva",
-      "date_created": "2021--25",
+      "date_created": "2022-04-15",
       "picture": "/img/purpose_img.jpg"
     },
     {
-      "title": "Get comfortable with Axi Draw",
-      "description": "Learn how to use 3d Dreamforge printers in 2 days! You will be able to create your own 3D figures from the scratch!",
+      "title": "Valentine's Mask Designing",
+      "description": "Design your own mask using 3D printing and Silhoutte Cameo. February 12, from 1-3PM in TAD Building (B012)",
       "creator": "Sabira Duishebaeva",
       "date_created": "2021-06-25",
       "picture": "/img/vinylcutter.jpg"
     },
     {
-      "title": "Make a card for your friend with FormLab 3D printer",
-      "description": "Create any kind of 3D object from scratch and make a gift for your friend!",
+      "title": "Intro to Vinyl Cutter",
+      "description": "Learn how to make stickers using Vinyl Cutter. November 13, from 1-2PM in TAD Building (B012)",
       "creator": "Sabira Duishebaeva",
-      "date_created": "2021-06-25",
+      "date_created": "2021-11-13",
       "picture": "/img/vinylcutter.jpg"
     }
   ]
