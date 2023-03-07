@@ -149,9 +149,9 @@ button {
 }
 
 #footer {
-    height: 200px;
+    height: 300px;
     min-width: 100%;
-    background: black;
+    background: #075988;
     float: left;
 }
 
@@ -347,11 +347,11 @@ img.resize {
 }
 
 .address-line {
-    color: gray;
+    color: white;
 }
 
 .phone {
-    color: gray;
+    color: white;
 }
 
 .circle {
