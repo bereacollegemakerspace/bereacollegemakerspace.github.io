@@ -6,8 +6,9 @@ body {
     background-image: url('img/bground2.svg');
     background-size: 70%;
     background-repeat: no-repeat;
-    background-position: right;
-    background-position-x: 100
+    
+    background-position-x: 100%;
+    background-position-y: right;
     
 
 
