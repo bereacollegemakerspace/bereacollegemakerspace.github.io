@@ -3,6 +3,10 @@ body {
     overflow-x: hidden;
     margin: 0;
     background-color: white;
+    background-image: url('img/BG.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
 }
 
 h1 {
@@ -15,6 +19,7 @@ h1 {
 .topnav {
     overflow: hidden;
     text-align: center;
+    padding-top:20px
 }
 
 .nav-menu {
