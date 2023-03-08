@@ -12,6 +12,7 @@ body {
     
 
 
+
 }
 
 h1 {
@@ -24,11 +25,12 @@ h1 {
 .topnav {
     overflow: hidden;
     padding-top:20px
+    
 }
 
 .nav-menu {
     display: inline-block;
-    
+    padding-left:12%
     
     
 }
