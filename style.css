@@ -4,9 +4,13 @@ body {
     margin: 0;
     background-color: white;
     background-image: url('img/bground2.svg');
-    background-size: 60%;
+    background-size: 70%;
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: right;
+    background-position-x: 100
+    
+
+
 }
 
 h1 {
