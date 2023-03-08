@@ -177,7 +177,6 @@ button {
     float: left;
 }
 
-
 * {box-sizing:border-box}
 
 /* Slideshow container */
@@ -414,6 +413,10 @@ div {
     display: table;
 }
 
+
+.schedule_main {
+  padding-top: 20%;
+}
 /*html, body {
     background: white;
     height: 100%;
