@@ -75,6 +75,9 @@ section {
     flex-shrink: 1.4;
 }
 
+.purpose-left-text{
+    padding-right: 40%
+}
 .purpose-right-text {
     width: 60%;
     line-height: 32px;
