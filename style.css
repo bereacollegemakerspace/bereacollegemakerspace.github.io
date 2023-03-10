@@ -184,6 +184,7 @@ button {
     background: #075988;
     float: left;
    
+   
 }
 
 * {box-sizing:border-box}
@@ -357,8 +358,10 @@ text-align : center;
 
 #flex-footer-el-1 div {
     padding: 10px;
-   
+    text-align: left;
+ 
 }
+
 
 #flex-footer-el-2 {
     float: right;
