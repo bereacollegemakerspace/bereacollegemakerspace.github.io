@@ -191,8 +191,9 @@ button {
 
 /* Slideshow container */
 .slideshow-container {
-    width: 2000px;
-    position: relative;
+    width: 500px;
+    padding-bottom: 60px; 
+    position: center;
     margin: auto;
 }
 
@@ -200,7 +201,7 @@ button {
 /* Hide the images by default */
 .mySlides {
     width: 100%;
-    display: none;
+    display: contents;
 }
 
 .mySlides img{
