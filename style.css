@@ -396,6 +396,8 @@ text-align : center;
 
 .phone {
     color: white;
+    display: flex;
+    align-items: center;
 }
 
 .circle {
