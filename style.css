@@ -14,10 +14,6 @@ body {
     
     background-position-x: 100%;
     background-position-y: right;
-    
-
-
-
 }
 
 h1 {
@@ -26,6 +22,8 @@ h1 {
     font-size: 38px;
 
 }
+
+a:link { color: yellow;}
 
 /* Add a black background color to the top navigation */
 .topnav {
@@ -102,9 +100,6 @@ section {
     text-align: center;
 }
 
-
-div {
-}
 
 .contact-image-wrapper {
     text-align: right;
@@ -370,10 +365,14 @@ text-align : center;
     text-align: left;
     padding-top: 36px;
    
-    
-    
 }
 
+.center{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50;
+}
 
 #flex-footer-el-3 {
     padding-top: 0px;
@@ -386,8 +385,9 @@ text-align : center;
     padding-bottom: 0;
 }
 
-.college-name {
+#flex-footer-el-2 p {
     color: white;
+    padding-left:130px
 }
 
 .address-line {
