@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
 body {
-    font-family: Open Sans, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
     margin: 0;
 }
@@ -7,17 +10,20 @@ body {
 h1 {
     text-align: center;
     font-weight: normal;
-    font-size: 48px;
+    font-size: 38px;
 }
 
 /* Add a black background color to the top navigation */
 .topnav {
+    text-align: left;
     overflow: hidden;
-    text-align: center;
+    padding-top: 20px
 }
 
 .nav-menu {
+   
     display: inline-block;
+    padding-left: 12%
 }
 
 /* Style the links inside the navigation bar */
@@ -129,9 +135,10 @@ main {
 }
 
 #footer {
-    height: 200px;
-    width: 100vw;
-    background: black;
+    height: 500px;
+    min-width: 100%;
+    background: #075988;
+    float: left;
 }
 
 .flex-footer {
@@ -143,12 +150,12 @@ main {
 
 .flex-footer div {
     padding-top: 20px;
-    padding-left: 200px;
+    padding-left: 100px;
     padding-right: 100px;
 }
 
 #flex-footer-el-1 {
-
+    text-align: left;
 }
 
 #flex-footer-el-1 div {
@@ -156,12 +163,13 @@ main {
 }
 
 #flex-footer-el-2 {
-    padding-left: 50px;
-    padding-top: 10px;
+    float: right;
+    text-align: left;
+    padding-top: 45px;
 }
 
 #flex-footer-el-3 {
-    padding-top: 10px;
+    padding-top: 0px;
     padding-left: 0;
     padding-right: 0;
 }
@@ -176,11 +184,11 @@ main {
 }
 
 .address-line {
-    color: gray;
+    color: white;
 }
 
 .phone {
-    color: gray;
+    color: white;
 }
 
 .circle {
